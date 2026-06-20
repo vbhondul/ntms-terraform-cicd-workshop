@@ -11,14 +11,14 @@ resource "azurerm_virtual_network" "vnet" {
 }
 
 resource "azurerm_subnet" "web-snet" {
-  name                 = "web-subnet"
+  name                 = "web-subnet1"
   virtual_network_name = azurerm_virtual_network.vnet.name
   resource_group_name  = azurerm_resource_group.rg.name
   address_prefixes     = ["10.1.0.0/24"]
 }
 
 resource "azurerm_subnet" "app-snet" {
-  name                 = "app-subnet"
+  name                 = "app-subnet1"
   virtual_network_name = azurerm_virtual_network.vnet.name
   resource_group_name  = azurerm_resource_group.rg.name
   address_prefixes     = ["10.1.1.0/24"]
