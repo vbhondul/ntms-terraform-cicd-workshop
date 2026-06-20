@@ -8,10 +8,10 @@ terraform {
 
 
   backend "azurerm" {
-    resource_group_name = "rg-terraform-state"
+    resource_group_name  = "rg-terraform-state"
     storage_account_name = "stntmstfstate"
-    container_name = "vaibhav" #replace with your name
-    key = "vaibhav.terraform.tfstate" #replace with your name
+    container_name       = "vaibhav"                   #replace with your name
+    key                  = "vaibhav.terraform.tfstate" #replace with your name
   }
 }
 
